@@ -1,7 +1,23 @@
-import React from 'react'
+import {BroserRouter, Routes,Route} from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
+import SignIn from './pages/SignIn'
+import SignUp from './pages/Signup'
+import Project from './pages/Project'
+import Dashboard from './pages/Dashboard'
 
 export default function App() {
   return (
-    <h1 className='text-3xl text-red-500'>App go</h1>
+    <BroserRouter>
+     <Routes>
+       <Route path="/" element={<Home/>} />
+       <Route path="/about" element={<About />} />
+       <Route path="/sign-in" element={<SignIn />} />
+       <Route path="/sign-up" element={<SignUp />} />
+       <Route path="/project" element={<Project />} />
+       <Route path="/dashboard" element={<Dashboard />} />
+    
+     </Routes>
+    </BroserRouter>
   )
 }
