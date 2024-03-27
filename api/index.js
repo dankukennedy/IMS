@@ -9,7 +9,8 @@ import dotenv from 'dotenv';
 
 //importing user.routes from route
 import userRoutes from './routes/user.route.js';
-
+// importing authRoutes from route
+import authRoutes from './routes/auth.route.js'
 // dotenv package and Webpack configuration
 dotenv.config();
 
@@ -28,3 +29,4 @@ app.listen(3000, ()=> {
 });
 // api test using app.get 
 app.use('/api/user', userRoutes);
+app.use('/api/auth', authRoutes);
