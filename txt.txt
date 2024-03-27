@@ -1,1 +1,0 @@
-MONGO = 'mongodb+srv://admin:admin@ims.inbmosu.mongodb.net/ims?retryWrites=true&w=majority'
