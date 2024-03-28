@@ -23,6 +23,9 @@ mongoose.connect(process.env.MONGO).then( ()=>{
  //Dalaration of app on express
 const app = express();
 
+//create json application
+app.use(express.json());
+
 //app runging on port
 app.listen(3000, ()=> {
     console.log('server is loading on port 3000');
